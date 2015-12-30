@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+
+int main (void)
+
+{
+char
+  letter;
+
+ printf("Enter first letter of the color of the gas cylinder");
+ scanf("%c", &letter);
+ 
+ switch (letter)
+{
+ case 'o':
+ case 'O':
+   printf("The gas cylinder contains ammonia");
+  break;
+
+ case 'b':
+ case 'B':
+   printf("The gas cylinder contains carbon monoxide");
+  break;
+
+ case 'Y':
+ case 'y':
+   printf("The gas cylinder contains hydrogen");
+  break;
+
+ case 'g':
+ case 'G':
+   printf("the gas cylinder contains oxygen");
+  break;
+
+ default: 
+   printf("Invalid Entry");
+
+ }
+ 
+ return 0;
+ }

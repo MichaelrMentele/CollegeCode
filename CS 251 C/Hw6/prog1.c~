@@ -1,0 +1,64 @@
+//dont even need array could simply use variable
+
+
+#include <stdio.h>
+#include <math.h>
+
+
+int factor (double FAC[]);
+
+int main (void)
+
+{
+  double FAC[8] = {0};
+  factor( FAC);
+ 
+
+  return 0;
+}
+
+int factor (double FAC[])
+
+{int div, NUM, A_CNT, NUM_O;
+
+  A_CNT = 0;
+  div = 2;
+
+  printf("\nEnter integer to be factored> ");
+  scanf("%d", &NUM);
+
+  NUM_O = NUM;
+  printf("%d =", NUM_O);
+  do
+
+ {
+  if (NUM % div == 0)
+  {
+      FAC[A_CNT] = div;
+     
+      printf(" %.f ", FAC[A_CNT]);
+
+      if(NUM == div)
+
+	{
+	  printf("\n");
+	  break;
+	}
+
+      printf("x");
+      
+      NUM = NUM / div;
+      
+     
+  }
+  else div = div + 1;
+      
+}  
+
+  while (NUM >= div);
+
+
+
+
+      return 0;
+    }

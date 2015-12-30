@@ -1,0 +1,1 @@
+SymonSaysFuckOff.o: SymonSaysFuckOff.c
